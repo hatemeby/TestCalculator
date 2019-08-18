@@ -1,0 +1,28 @@
+import java.io.IOException;
+
+public class Result {
+
+    public int getResult(int numberOne, int numberTwo, String operator) throws IOException {
+        Operation operation = new Operation();
+        int res;
+        switch (operator) {
+            case "+":
+                res = numberOne + numberTwo;
+                break;
+            case "-":
+                res = numberOne - numberTwo;
+                break;
+            case "/":
+                res = numberOne/numberTwo;
+                break;
+            case "*":
+                res = numberOne*numberTwo;
+                break;
+            default:
+                System.out.println("Говно коня, идите нахуй");
+                res = getResult(numberOne, numberTwo, operation.getOperator());
+        }
+        return res;
+
+    }
+}
