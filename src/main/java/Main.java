@@ -5,8 +5,8 @@ public class Main {
         Numbers numbers = new Numbers();
         Main main = new Main();
         Operation operation = new Operation();
-        int numberOne = numbers.getInt();
-        int numberTwo = numbers.getInt();
+        int numberOne = numbers.getInt1();
+        int numberTwo = numbers.getInt2();
         String operator = operation.getOperator();
         int result = main.getResult(numberOne, numberTwo, operator);
         System.out.println("Шурик лох " + result + " раз");
